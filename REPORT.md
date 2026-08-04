@@ -203,7 +203,7 @@ TOTAL                       68     24     34      9    64%
 
 **After:** 100% branch coverage
 
-![pytest --cov output](report-images/image6.png)
+![pytest --cov output](report-images/image6.jpeg)
 
 ```
 Name                     Stmts   Miss Branch BrPart  Cover   Missing
