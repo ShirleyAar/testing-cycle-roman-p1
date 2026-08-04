@@ -86,8 +86,7 @@ def test_integration_add_roman_matches_specification_example():
 
 **Execution result**
 
-![Integration test failure](report-images/image2.png
-
+![Integration test failure](report-images/image2.png)
 **Defect found:** `add_roman("II", "II")` returned `"IIII"` instead of the specified
 `"IV"` (ESPECIFICACION.md, section 7).
 
