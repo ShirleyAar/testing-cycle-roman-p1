@@ -98,8 +98,8 @@ def _count_char(text, ch):
 
 def is_valid_roman(s):
     try:
-        from_roman(s)
-        return True
+        value = from_roman(s)
+        return to_roman(value) == s.strip().upper()
     except RomanError:
         return False
 
