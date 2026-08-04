@@ -11,6 +11,28 @@
 
 ![Control flow graph](report-images/image1.png)
 
+
+
+
+**Node-to-code mapping**
+
+| Node | Corresponds to |
+|------|-----------------|
+| 1 | `not isinstance(n, int)` (first part of the OR condition) |
+| 2 | `isinstance(n, bool)` (second part of the OR condition) |
+| 3 | `raise RomanError("value must be an integer")` |
+| 4 | `n < _MIN_VALUE` |
+| 5 | `raise RomanError("value must be >= 1")` |
+| 6 | `n > _MAX_VALUE` |
+| 7 | `raise RomanError("value must be <= 3999")` |
+| 8 | `out = []; remaining = n` (initialization, before the for loop) |
+| 9 | `for value, symbol in _PAIRS:` (for loop control) |
+| 10 | `while remaining >= value:` (while loop control) |
+| 11 | `out.append(symbol); remaining -= value` (while loop body) |
+| 12 | `return "".join(out)` |
+| 13 | function exit |
+
+
 **Cyclomatic complexity**
 
 - E = 18
